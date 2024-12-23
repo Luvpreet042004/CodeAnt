@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CodeAnt
 =======
 # React + TypeScript + Vite
