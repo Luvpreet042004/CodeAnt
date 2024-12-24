@@ -1,8 +1,8 @@
 import React from "react";
-import WelcomeSide from "./SignInComponets/WelcomeSide";
 import LeftSection from "./SignInComponets/LeftSection";
+import WelcomeSide from "./SignInComponets/WelcomeSide";
 
-const SignIn : React.FC = () => {
+const SignUp : React.FC = () => {
     return (
         <div className="lg:grid grid-cols-2">
         <LeftSection/>
@@ -13,4 +13,4 @@ const SignIn : React.FC = () => {
     )
 }
 
-export default SignIn;
+export default SignUp;

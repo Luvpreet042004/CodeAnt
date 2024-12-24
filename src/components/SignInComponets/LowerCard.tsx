@@ -4,7 +4,7 @@ import Quater from '../../picture/ant-design_pie-chart-filled.svg';
 
 const LowerCard : React.FC = ()=>{
     return (
-        <div className="rounded-3xl w-[265px] h-[164px] bg-white shadow-[0_0_24px_0_rgba(8,23,53,0.16)] flex flex-col  justify-around px-6 py-4 ">
+        <div className="rounded-3xl xl:w-[265px] xl:h-[164px] bg-white shadow-[0_0_24px_0_rgba(8,23,53,0.16)] flex flex-col  justify-around px-6 py-4 ">
         <div className="flex justify-between space-x-10">
             <div className="rounded-full  bg-indigo-100 w-12 h-12 flex items-center justify-center">
                 <img src={Quater} alt="" />
