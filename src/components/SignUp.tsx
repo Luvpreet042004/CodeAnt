@@ -7,7 +7,7 @@ const SignUp : React.FC = () => {
         <div className="lg:grid grid-cols-2">
         <LeftSection/>
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-          <WelcomeSide/>
+          <WelcomeSide view = "signup"/>
         </div>
         </div>
     )

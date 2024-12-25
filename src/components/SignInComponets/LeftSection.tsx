@@ -5,7 +5,7 @@ import LowerCard from "./LowerCard";
 const LeftSection : React.FC = ()=>{
     return(
         <div className="hidden lg:flex  flex-col items-center justify-end min-h-[722px] ">
-          <div className="lg:relative  w-[70%] h-[40%] xl:h-[43%] xl:w-[77%]">
+          <div className="lg:relative  w-[72%] h-[40%] xl:h-[43%] xl:w-[75%]">
           <div className="absolute top-0 left-0"><UpperCard/></div>
           <div className="absolute bottom-0 right-0"><LowerCard/></div>
           </div>
