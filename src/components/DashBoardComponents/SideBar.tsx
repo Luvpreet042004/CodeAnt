@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { useWindowSize } from "react-use";
 import Repo from '../../picture/Repo.svg';
 import Code from '../../picture/Code.svg';
 import Cloud from '../../picture/Cloud.svg';

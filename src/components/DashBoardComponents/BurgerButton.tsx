@@ -10,8 +10,8 @@ interface ChildProps {
 const BurgerButton : React.FC<ChildProps> = ({isOpen, setIsOpen})=>{
 
     return(
-        <div className="flex justify-between items-center p-4">
-        <div className="flex items-center space-x-2">
+        <div className="flex justify-between items-center p-1">
+        <div className="flex items-center space-x-1">
             <img src={Subtract} alt="" />
         <span className="font-bold text-xl">CodeAnt AI</span>
         </div>

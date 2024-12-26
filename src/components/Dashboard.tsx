@@ -8,7 +8,7 @@ const Dashboard: React.FC = () => {
    <div className="flex z-10 lg:w-1/5 ">
    <Sidebar/>
     </div>
-   <div className="flex rounded-xl mt-[160px] lg:m-0 w-full lg:w-4/5 justify-center">
+   <div className="flex rounded-xl mt-[150px] lg:m-0 w-full lg:w-4/5 justify-center">
    <Repositories/>
    </div>
    </div>
