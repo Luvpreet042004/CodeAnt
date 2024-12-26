@@ -82,13 +82,13 @@ const repositories = [
 
 const Repositories: React.FC = () => {
   return (
-    <div className="pt-4 my-6 bg-white w-[97%] rounded-xl overflow-hidden">
+    <div className="pt-4 lg:my-6 bg-white lg:w-[97%] w-full lg:rounded-xl overflow-hidden">
       {/* Fixed Top Bar */}
-      <div className="px-6   w-full top-0 bg-white z-10">
+      <div className="px-6 w-full top-0 bg-white z-10">
         <div className="flex justify-between mb-6">
           <h2 className="text-2xl font-bold">Repositories</h2>
           <div className="space-x-2 flex">
-            <button className="flex text-[#414651] border border-[#D5D7DA] bg-white py-2 px-4 rounded-lg">
+            <button className="flex text-[#414651] border border-[#D5D7DA] bg-white space-x-1 items-center justify-center py-2 px-4 rounded-lg">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -140,15 +140,6 @@ const Repositories: React.FC = () => {
                   {repo.language} • {repo.size} • Updated {repo.updated}
                 </p>
               </div>
-              <span
-                className={`text-xs font-bold px-2 py-1 rounded ${
-                  repo.visibility === "Public"
-                    ? "bg-green-100 text-green-600"
-                    : "bg-gray-100 text-gray-600"
-                }`}
-              >
-                {repo.visibility}
-              </span>
             </div>
           ))}
         </div>
