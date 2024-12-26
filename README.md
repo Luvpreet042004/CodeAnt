@@ -28,9 +28,6 @@ Run the following command in your terminal to clone the repository:
 ```bash
 git clone https://github.com/Luvpreet042004/CodeAnt
 ```
-
-Replace `<repository-url>` with the URL of your project’s repository.
-
 ---
 
 ## **Navigate to the Project Directory**
