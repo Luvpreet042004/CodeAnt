@@ -19,7 +19,8 @@ const BurgerButton : React.FC<ChildProps> = ({isOpen, setIsOpen})=>{
       className="relative lg:hidden flex items-center justify-center w-12 h-12"
       aria-controls="primary-navigation"
       aria-expanded={isOpen}
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={() => {setIsOpen(!isOpen);console.log(isOpen);
+      }}
     >
       <svg
         className="w-10 h-10 flex items-center justify-center"

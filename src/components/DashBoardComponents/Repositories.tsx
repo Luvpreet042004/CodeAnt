@@ -85,7 +85,7 @@ const Repositories: React.FC = () => {
     <div className="pt-4 lg:my-6 bg-white lg:w-[97%] w-full lg:rounded-xl overflow-hidden">
       {/* Fixed Top Bar */}
       <div className="px-6 w-full top-0 bg-white z-10">
-        <div className="flex justify-between mb-6">
+        <div className="lg:flex justify-between mb-6">
           <h2 className="text-2xl font-bold">Repositories</h2>
           <div className="space-x-2 flex">
             <button className="flex text-[#414651] border border-[#D5D7DA] bg-white space-x-1 items-center justify-center py-2 px-4 rounded-lg">

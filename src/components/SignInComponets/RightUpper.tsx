@@ -1,7 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
+interface Props {
+  view: string;
+}
 
-const RightUpper : React.FC = () =>{
+const RightUpper: React.FC<Props> = ({ view }) => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+  };
     return (
         <div className="bg-white p-8 w-full rounded-t-lg shadow-lg">
           {/* Logo */}
@@ -15,12 +24,22 @@ const RightUpper : React.FC = () =>{
   
           {/* Toggle Buttons */}
           <div className="grid grid-cols-2">
-            <button className="bg-blue-600 text-white font-medium py-2 px-4 rounded-lg">
-              SAAS
-            </button>
-            <button className="bg-gray-100 text-gray-600 font-medium py-2 px-4 rounded-lg">
-              Self Hosted
-            </button>
+          <button
+    onClick={() => handleNavigation("/saas")}
+    className={`${
+      view === "saas" ? "bg-blue-600 text-white" : "bg-gray-100 text-[#414651]"
+    } font-medium py-2 px-4 rounded-lg`}
+  >
+    SAAS
+  </button>
+  <button
+    onClick={() => handleNavigation("/selfhosted")}
+    className={`${
+      view === "saas" ? "bg-gray-100 text-[#414651]" : "bg-blue-600 text-white"
+    } font-medium py-2 px-4 rounded-lg`}
+  >
+    Self Hosted
+  </button>
           </div>
           </div>
     )

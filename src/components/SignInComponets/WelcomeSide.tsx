@@ -11,10 +11,10 @@ const WelcomeSide : React.FC<WelcomeProps> = ({view})=>{
     return(
         <>
         <div className="bg-gray-100 flex flex-col space-y-0.5 rounded-lg w-[80%] lg:w-[90%]">
-        <RightUpper/>
+        <RightUpper view={view}/>
   
           {/* Sign-in Buttons */}
-        {view === 'signin' ? <SigninOptions /> : <SignUpOptions />}
+        {view === 'saas' ? <SigninOptions /> : <SignUpOptions />}
         </div>
   
           {/* Privacy Policy */}
