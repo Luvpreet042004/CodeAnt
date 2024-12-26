@@ -1,53 +1,129 @@
 # CodeAnt
 =======
-# React + TypeScript + Vite
+# **Project Setup Guide**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This guide will help you set up and run the project locally. The project uses **Vite**, **React with TypeScript**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Prerequisites**
 
-## Expanding the ESLint configuration
+Ensure you have the following installed on your machine:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Node.js** (version 14 or higher)  
+   Download and install from [Node.js official website](https://nodejs.org/).
 
-- Configure the top-level `parserOptions` property like this:
+2. **npm** or **yarn**  
+   npm comes with Node.js. Alternatively, you can install Yarn by following the instructions [here](https://yarnpkg.com/).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+3. **Git** (optional, if cloning the repository)  
+   Download and install from [Git official website](https://git-scm.com/).
+
+---
+
+## **Clone the Repository**
+
+Run the following command in your terminal to clone the repository:
+
+```bash
+git clone <repository-url>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Replace `<repository-url>` with the URL of your project’s repository.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## **Navigate to the Project Directory**
+
+Change into the project directory:
+
+```bash
+cd <project-name>
 ```
->>>>>>> cea7ca2 (First Commit)
+
+Replace `<project-name>` with the name of your project directory.
+
+---
+
+## **Install Dependencies**
+
+Install the project dependencies using npm or yarn:
+
+### Using npm:
+```bash
+npm install
+```
+
+### Using yarn:
+```bash
+yarn install
+```
+
+---
+
+## **Run the Development Server**
+
+Start the development server with the following command:
+
+### Using npm:
+```bash
+npm run dev
+```
+
+### Using yarn:
+```bash
+yarn dev
+```
+
+The development server will start, and you can access the application in your browser at [http://localhost:5173](http://localhost:5173).
+
+---
+
+## **Build for Production**
+
+To create a production build of the project, run:
+
+### Using npm:
+```bash
+npm run build
+```
+
+### Using yarn:
+```bash
+yarn build
+```
+
+This will generate the production-ready files in the `dist` directory.
+
+---
+
+## **Preview the Production Build**
+
+To preview the production build locally, run:
+
+### Using npm:
+```bash
+npm run preview
+```
+
+### Using yarn:
+```bash
+yarn preview
+```
+
+---
+
+## **Scripts**
+
+The following scripts are available in the `package.json`:
+
+| Script         | Description                                     |
+| -------------- | ----------------------------------------------- |
+| `dev`          | Runs the development server.                   |
+| `build`        | Creates a production build.                    |
+| `preview`      | Serves the production build locally.           |
+| `lint`         | Lints the code (if ESLint is configured).       |
+| `format`       | Formats code (if Prettier is configured).       |
+
+---
+
