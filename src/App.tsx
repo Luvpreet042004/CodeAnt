@@ -1,14 +1,14 @@
 // import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from "./components/Dashboard";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
+import Dashboard from "./Pages/Dashboard";
+import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/saas" element={<SignIn />} />
+        <Route path="/" element={<SignIn />} />
         <Route path="/selfhosted" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>

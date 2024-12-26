@@ -1,6 +1,6 @@
 import React from "react";
-import LeftSection from "./SignInComponets/LeftSection";
-import WelcomeSide from "./SignInComponets/WelcomeSide";
+import LeftSection from "../components/SignInComponets/LeftSection";
+import WelcomeSide from "../components/SignInComponets/WelcomeSide";
 
 const SignUp : React.FC = () => {
     return (

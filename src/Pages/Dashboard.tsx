@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "./DashBoardComponents/SideBar";
-import Repositories from "./DashBoardComponents/Repositories";
+import Sidebar from "../components/DashBoardComponents/SideBar";
+import Repositories from "../components/DashBoardComponents/Repositories";
 
 const Dashboard: React.FC = () => {
   return (
